@@ -1,0 +1,8 @@
+from num2words import num2words
+n=int(input("enter a number")
+if 0<n<999:
+print(num2words(n))
+else:
+print("not a numbe4")
+#56
+#fifty six
