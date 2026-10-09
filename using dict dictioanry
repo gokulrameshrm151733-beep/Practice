@@ -1,0 +1,14 @@
+from collections import defaultdict
+
+# Grouping words by their starting letter
+words = ["apple", "banana", "apricot", "cherry", "blueberry"]
+grouped_words = defaultdict(list)
+
+for word in words:
+    first_letter = word[0]
+    # No need to check if first_letter exists yet; it defaults to []
+    grouped_words[first_letter].append(word)
+
+print(dict(grouped_words))
+# Output: {'a': ['apple', 'apricot'], 'b': ['banana', 'blueberry'], 'c': ['cherry']}
+-----------------------------------------------------------------------------------------------------
